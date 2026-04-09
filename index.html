@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Jogo da Adivinhação</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./CSS/style.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div id="container">
+        <h1> Jogo da Adivinhação🪄</h1>
+        <select id="nivel" onchange="mudarNivel()">
+            <option value="100">Facil 1-100</option>
+            <option value="200">Medio 1-200</option>
+            <option value="300">Dificil 1-300</option>
+        </select>
+        <br>
+        <!-- Input -->
+        <input type="number" id="chute" placeholder="Digite seu número">
+        <br>
+
+
+        <!-- Botões -->
+        <button id="chutar" onclick="verificarChute()">Chutar</button>
+        <button id="reiniciar" onclick="reiniciarJogo()">Reiniciar</button>
+
+        <!-- Feedback -->
+    <p id="mensagem">Tente adivinhar o número!</p>
+    <p id="tentativas">Tentativas: 5</p>
+    <p id="pontos">Pontos: 100</p>
+    <p id="historico">Chutes: </p>
+    </div>
+
+
+    <script src='./JS/script.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
